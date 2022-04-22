@@ -8,23 +8,37 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body id="body">
     <div class="header-links">
       <a href="#about">About</a>
       <a href="#hobbies">Hobbies</a>
       <a href="#product">Product</a>
     </div>
     <h6 id="my-name">Yuuki Hayashi</h6>
-    <img src="./images/mia-nohara-RqKoA7A29x0-unsplash.jpeg" alt="竹林" id="image" />
-    <div class="block">
-      <h2 id="about" class="block-title">About</h2>
-      <p></p>
+    <img
+      src="./images/mia-nohara-RqKoA7A29x0-unsplash.jpeg"
+      alt="竹林"
+      id="image"
+    />
+    <div class="first-container">
+      <div class="block">
+        <h2 id="about" class="block-title">About</h2>
+        <p>Name : Yuuki Hayashi</p>
+        <p>Birth : 2001, May 10th</p>
+        <p>From : Fukuoka City, Sawara Ward</p>
+        <p>Univ : Fukuoka-u</p>
+        <p>Major : Infomation Engineering</p>
+        <p></p>
+      </div>
+      <img src="./images/fukuoka-u.jpg" alt="福岡大学" class="fukuoka-u" />
     </div>
+
     <div class="block">
       <h2 id="hobbies" class="block-title">Hobbies</h2>
       <div>
-        <p>eva</p>
-        <button id="wakeup-button">WakeUp</button>
+        <p>アニメ鑑賞</p>
+        <div>Evangelion</div>
+        <button id="wakeup-button">擬似シン化</button>
         <button id="back-button" hidden>Back</button>
       </div>
     </div>
@@ -32,7 +46,9 @@
       <h2 id="product" class="block-title">Product</h2>
       <div>ccc</div>
     </div>
-    <footer>&copy; 2022 Yuuki Hayashi&nbsp;,&nbsp;&nbsp;All rights reserved.</footer>
+    <footer>
+      &copy; 2022 Yuuki Hayashi&nbsp;,&nbsp;&nbsp;All rights reserved.
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

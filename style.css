@@ -5,49 +5,49 @@
 
 body {
   max-width: 100%;
-  background: #C3D9C3;
+  background: #c3d9c3;
   -webkit-animation: color 15s linear infinite;
   -moz-animation: color 15s linear infinite;
 }
 
 @-webkit-keyframes color {
   0% {
-    background: #C3CBD9;
+    background: #c3cbd9;
   }
 
   40% {
-    background: #D9DAD9;
+    background: #d9dad9;
   }
 
   80% {
-    background: #D9C3CE;
+    background: #d9c3ce;
   }
 
   100% {
-    background: #D9D2C3;
+    background: #d9d2c3;
   }
 }
 
 @-moz-keyframes color {
   0% {
-    background: #C3CBD9;
+    background: #c3cbd9;
   }
 
   40% {
-    background: #D9DAD9;
+    background: #d9dad9;
   }
 
   80% {
-    background: #D9C3CE;
+    background: #d9c3ce;
   }
 
   100% {
-    background: #D9D2C3;
+    background: #d9d2c3;
   }
 }
 
 #my-name {
-  position: fixed;
+  position: absolute;
   left: 6.5rem;
   top: 10%;
   margin-left: 2rem;
@@ -58,10 +58,11 @@ body {
   font-size: 2rem;
   font-family: "Gabriela";
   opacity: 0.88;
+  cursor: default;
 }
 
 .header-links {
-  position: fixed;
+  position: absolute;
   padding: 0 1rem 0 1rem;
   top: 1rem;
   left: 1rem;
@@ -83,7 +84,7 @@ body {
 .header-links a:hover {
   background-color: grey;
   border-bottom: solid 0.2rem green;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: all 0.2s linear;
 }
 
@@ -93,10 +94,32 @@ body {
 }
 
 .block-title {
-  font-family: 'Gabriela';
+  font-family: "Gabriela";
+}
+
+.first-container {
+  display: flex;
+  justify-content: center;
 }
 
 .block {
+  background-color: white;
+  width: 45%;
+  margin: 1rem;
+  padding: 4rem;
+  opacity: 0.8;
+  cursor: default;
+}
+
+.block p {
+  margin: 1rem 1rem 1rem 0;
+  font-family: "Gabriela";
+  font-size: 1.2rem;
+}
+
+.fukuoka-u {
+  width: 30%;
+  margin: 1rem;
 }
 
 footer {

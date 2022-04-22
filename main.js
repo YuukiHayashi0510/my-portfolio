@@ -3,6 +3,7 @@ const myName = document.getElementById("my-name");
 const imageElement = document.getElementById("image");
 const wakeupButton = document.getElementById("wakeup-button");
 const backButton = document.getElementById("back-button");
+const body = document.getElementById("body");
 
 // 真偽値
 let transName = false;
@@ -31,6 +32,7 @@ wakeupButton.onclick = function () {
   isWakeup = true;
   wakeupButton.hidden = true;
   backButton.hidden = false;
+  imageElement.scrollIntoView({ behavior: "smooth" });
 };
 
 backButton.onclick = function () {
@@ -38,4 +40,5 @@ backButton.onclick = function () {
   isWakeup = false;
   wakeupButton.hidden = false;
   backButton.hidden = true;
+  imageElement.scrollIntoView({ behavior: "smooth" });
 };
