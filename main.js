@@ -4,7 +4,7 @@ const imageElement = document.getElementById("image");
 const wakeupButton = document.getElementById("wakeup-button");
 const backButton = document.getElementById("back-button");
 
-//
+// 真偽値
 let transName = false;
 let isWakeup = false;
 
@@ -15,9 +15,9 @@ const transitionImage = function () {
   if (isWakeup === false) {
     transName = !transName;
     transName
-      ? ((imageElement.src = "panda-g24e9a44c8_1920.jpeg"),
+      ? ((imageElement.src = "./images/panda-g24e9a44c8_1920.jpeg"),
         (myName.textContent = "Rinrin_Mentor"))
-      : ((imageElement.src = "mia-nohara-RqKoA7A29x0-unsplash.jpeg"),
+      : ((imageElement.src = "./images/mia-nohara-RqKoA7A29x0-unsplash.jpeg"),
         (myName.textContent = "Yuuki Hayashi"));
   }
 };
@@ -27,14 +27,14 @@ window.onload = function () {
 };
 
 wakeupButton.onclick = function () {
-  imageElement.src = "wakeup.png";
+  imageElement.src = "./images/wakeup.png";
   isWakeup = true;
   wakeupButton.hidden = true;
   backButton.hidden = false;
 };
 
 backButton.onclick = function () {
-  imageElement.src = "mia-nohara-RqKoA7A29x0-unsplash.jpeg";
+  imageElement.src = "./images/mia-nohara-RqKoA7A29x0-unsplash.jpeg";
   isWakeup = false;
   wakeupButton.hidden = false;
   backButton.hidden = true;
