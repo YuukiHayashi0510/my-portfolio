@@ -87,6 +87,8 @@ html {
 
 .header-links a:hover {
   background-color: grey;
+  text-decoration: none;
+  color: black;
   border-bottom: solid 0.2rem green;
   opacity: 0.8;
   transition: all 0.2s linear;
@@ -141,8 +143,34 @@ html {
   margin-top: 1rem;
 }
 
+.second-container li {
+  margin-left: 1rem;
+}
+
+.second-container .block {
+  padding-top: 1.7rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
 .anime {
   width: 36vw;
+}
+
+.third-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#product-image {
+  width: 40vw;
+  height: 38vh;
+}
+
+.third-container .block {
+  width: 20rem;
 }
 
 footer {

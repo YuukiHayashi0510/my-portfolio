@@ -4,10 +4,15 @@ const imageElement = document.getElementById("image");
 const wakeupButton = document.getElementById("wakeup-button");
 const backButton = document.getElementById("back-button");
 const body = document.getElementById("body");
+const eva = document.getElementById("eva");
 const animeImage = document.getElementById("anime-image");
 const codeGeass = document.getElementById("code-geass");
 const geassButton = document.getElementById("geass");
 const rebornMessage = document.getElementById("reborn-message");
+const productImage = document.getElementById("product-image");
+const tlButton = document.getElementById("tl-button");
+const bookButton = document.getElementById("book-button");
+const recButton = document.getElementById("rec-button");
 
 // 真偽値
 let transName = false;
@@ -30,6 +35,12 @@ const transitionImage = function () {
 
 window.onload = function () {
   setInterval(transitionImage, sec * 1000);
+};
+
+eva.onmouseover = function () {
+  if (isReborn === false && isWakeup === true) {
+    animeImage.src = "./images/eva13.jpeg";
+  }
 };
 
 wakeupButton.onclick = function () {
@@ -70,4 +81,17 @@ geassButton.onclick = function () {
   isReborn = true;
   geassButton.hidden = true;
   rebornMessage.hidden = false;
+  wakeupButton.hidden = true;
+};
+
+tlButton.onclick = function () {
+  productImage.src = "./images/tlbackside.png";
+};
+
+bookButton.onclick = function () {
+  productImage.src = "./images/firselbook.png";
+};
+
+recButton.onclick = function () {
+  productImage.src = "./images/rec.png";
 };
