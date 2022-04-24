@@ -167,10 +167,13 @@ html {
 #product-image {
   width: 40vw;
   height: 38vh;
+  margin-top: 1rem;
 }
 
 .third-container .block {
-  width: 20rem;
+  width: 32rem;
+  height: 19rem;
+  font-size: 1.5rem;
 }
 
 footer {
