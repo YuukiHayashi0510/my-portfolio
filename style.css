@@ -46,6 +46,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #my-name {
   position: absolute;
   left: 6.5rem;
@@ -89,8 +93,8 @@ body {
 }
 
 #image {
-  width: 100%;
-  height: 45rem;
+  width: 100vw;
+  height: 100vh;
 }
 
 .block-title {
@@ -100,6 +104,7 @@ body {
 .first-container {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .block {
@@ -120,6 +125,24 @@ body {
 .fukuoka-u {
   width: 30%;
   margin: 1rem;
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Gabriela";
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.second-container img {
+  width: 40vw;
+  height: 50vh;
+  margin-top: 1rem;
+}
+
+.anime {
+  width: 36vw;
 }
 
 footer {
